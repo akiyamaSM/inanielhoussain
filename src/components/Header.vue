@@ -2,7 +2,7 @@
   <div>
       <el-row class="header">
           <el-col :span="12" class="text">
-              <el-carousel indicator-position="none" arrow="never" :interval="3000">
+              <el-carousel indicator-position="none" arrow="never" :interval="1000">
                   <el-carousel-item>
                       <span class="big-title">
                           You think <br>
@@ -22,7 +22,6 @@
           <el-col :span="12">
               <img src="/img/me.png" alt="me">
           </el-col>
-
       </el-row>
   </div>
 </template>
@@ -34,7 +33,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
 
     .header{
         background-color: #409EFF;
@@ -44,6 +43,10 @@ export default {
 
     .header .text{
         height: 100%;
+    }
+
+    .el-carousel__container{
+        height: 500px !important;
     }
 
     img{
